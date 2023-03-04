@@ -14,6 +14,12 @@ public class TextBoxSteps {
     }
 
     @SneakyThrows
+    public TextBoxFailedSteps doIncorrectTextBox(String name, String email, String currentAddress, String permanentAddress) {
+        inputTextBoxData(name, email, currentAddress, permanentAddress);
+        return new TextBoxFailedSteps();
+    }
+
+    @SneakyThrows
     private void inputTextBoxData(String name, String email, String currentAddress, String permanentAddress) {
         textBoxPage.fillUserName(name);
         textBoxPage.fillUserEmail(email);
