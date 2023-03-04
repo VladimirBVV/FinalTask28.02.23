@@ -48,7 +48,7 @@ public class BaseTest {
     @DataProvider(name = "loginFailed")
     public Object[][] loginFailedData() {
         return new Object[][] {
-                {"0","0"},
+                {"0","000"},
                 {"Qwerty","a"},
                 {"f5","0Qwerty/"},
                 {"Qwerty","Qwerty"}
