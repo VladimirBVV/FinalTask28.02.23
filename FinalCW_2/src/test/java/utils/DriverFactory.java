@@ -1,5 +1,6 @@
 package utils;
 
+import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,6 +10,7 @@ import java.io.File;
 public class DriverFactory {
     private static WebDriver driver;
     private static final String DRIVER_PATH = "src/test/resources/";
+    @SneakyThrows
     public static WebDriver getDriver(Browser browser) {
         File file;
         switch (browser) {
@@ -24,7 +26,8 @@ public class DriverFactory {
                 break;
             default: //add default browser here
         }
-        driver.navigate().to("https://demoqa.com/login");
+ //       driver.navigate().to("https://demoqa.com/login");
+ //       driver.navigate().to("https://demoqa.com/text-box");
         driver.manage().window().maximize();
         return driver;
     }
