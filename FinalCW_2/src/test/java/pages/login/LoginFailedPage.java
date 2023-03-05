@@ -28,8 +28,7 @@ public class LoginFailedPage extends LoginBasePage {
         try {
             userName.isEnabled();
             fail();
-        } catch (Exception ignored) {
-        }
+        } catch (Exception ignored) {}
     }
 
     public void assertThatHeaderContainsText(String text) {

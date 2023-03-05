@@ -28,6 +28,6 @@ public class LoginPage extends LoginBasePage {
     @SneakyThrows
     public void clickButton() {
         button.click();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 }

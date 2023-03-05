@@ -29,6 +29,7 @@ public class TextBoxTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         textBoxSteps = new TextBoxSteps();
+        getDriver().navigate().to("https://demoqa.com/text-box");
     }
 
     @AfterClass

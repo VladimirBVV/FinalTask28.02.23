@@ -27,6 +27,7 @@ public class BaseTest {
         driver = DriverFactory.getDriver(Browser.CHROME);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         steps = new LoginSteps();
+        getDriver().navigate().to("https://demoqa.com/login");
     }
 
     @AfterClass
